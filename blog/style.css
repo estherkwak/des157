@@ -2,16 +2,33 @@ header {
 	text-align: center;
 }
 
+div.blog-post {
+	width: 80%;
+	min-height: 500px;
+}
+
 div.text {
-	width: 500px;
-	padding-left: 10%;
+	width: 60%;
+	padding-left: 40%;
+	float:right;
+	display: inline-block;
 
 }
 
 div.photo {
-	padding-left: 5%;
-	width:500px;
-	float: right;
+	padding-left: 40%;
+	/*padding-bottom: 5%;*/
+	width: 60%;
+	display: inline-block;
+	/*width:50%;
+	float: right;*/
+
+}
+
+img {
+	/*width:50%;*/
+	padding-right: 50px;
+	float:left;
 
 }
 
