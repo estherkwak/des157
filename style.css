@@ -1,0 +1,50 @@
+header {
+	text-align: center;
+}
+
+
+body {
+	font-family: 'Frank Ruhl Libre', sans-serif;
+}
+
+h1 {
+	padding-left: 5%;
+}
+
+
+.columns {
+	float: left;
+	width: 250px;
+	padding: 10px 0px 10px 5%;
+}
+
+
+footer {
+	clear: left;
+	padding: 3% 0 0 5%;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: darkgray;
+}
+
+/* hoover over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: gray;
+}

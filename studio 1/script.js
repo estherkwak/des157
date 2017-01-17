@@ -29,7 +29,6 @@ function drawCreature() {
   drawArms(); //draws the arms
   drawFeet(); //draws the feet
   
-  
 
 }
 function drawArms() {
