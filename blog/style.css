@@ -2,6 +2,19 @@ header {
 	text-align: center;
 }
 
+body {
+	font-family: 'Frank Ruhl Libre', sans-serif;
+}
+
+h1 {
+	padding-left: 5%;
+}
+
+h3 {
+	padding-top: 20px;
+	padding-left: 5%;
+}
+
 div.blog-post {
 	width: 80%;
 	min-height: 500px;
@@ -31,20 +44,6 @@ img {
 	float:left;
 
 }
-
-body {
-	font-family: 'Frank Ruhl Libre', sans-serif;
-}
-
-h1 {
-	padding-left: 5%;
-}
-
-h3 {
-	padding-top: 20px;
-	padding-left: 5%;
-}
-
 
 /*links*/
 
