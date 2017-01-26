@@ -48,3 +48,9 @@ a:hover {
 a:active {
     color: gray;
 }
+
+div.photo {
+	padding-left: 40%;
+	padding-bottom: 5%;
+	width: 60%;
+	display: inline-block;
