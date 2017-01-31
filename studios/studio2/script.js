@@ -37,17 +37,15 @@ document.addEventListener("DOMContentLoaded", function() {
     " on you! I will reveal my secret identity on " + holiday + " at " + number + " o'clock" +
     " sharp.  Love, Your Secret Admirer";
     // test()
-
     return false;
-
   }
+
   function test() {
     console.log("TESTING")
     document.getElementById('result').innerHTML = "";
     document.getElementById('form-f').reset();
     return false;
   }
-
 });
 
 // function test(event) {

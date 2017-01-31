@@ -2,14 +2,15 @@
 
 /* CSS Document */
 
+
 /* start all css with a reset */
 
 * {
-    margin: 0px;
-    padding: 0px
+  margin: 0px;
+  padding: 0px
 }
 
-body{
+body {
   background-color: pink;
 }
 
@@ -20,7 +21,7 @@ h1 {
   color: #b12057;
 }
 
-img{
+img {
   padding: 90px 5px 5px 10px;
 }
 
@@ -34,22 +35,22 @@ img{
 }
 
 input[type=text] {
-    border: none;
-    border-bottom: 3px solid #b12057;
-    background-color: pink;
-    outline: none;
+  border: none;
+  border-bottom: 3px solid #b12057;
+  background-color: pink;
+  outline: none;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    background-color: #b12057;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 20px 20px;
-    cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  background-color: #b12057;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 20px 20px;
+  cursor: pointer;
 }
 
 #result {
@@ -63,30 +64,39 @@ input[type=button], input[type=submit], input[type=reset] {
 
 footer {
   font-family: 'Quicksand', sans-serif;
-	clear: left;
-	padding: 3% 0 0 5%;
+  clear: left;
+  padding: 3% 0 0 5%;
   color: white;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
+
+
 /* unvisited link */
+
 a:link {
-    color: white;
+  color: white;
 }
+
 
 /* visited link */
+
 a:visited {
-    color: white;
+  color: white;
 }
+
 
 /* hoover over link */
+
 a:hover {
-    color: hotpink;
+  color: hotpink;
 }
 
+
 /* selected link */
+
 a:active {
-    color: gray;
+  color: gray;
 }
