@@ -4,31 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <title>DOMContentLoaded template</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
     <script src='script.js' type="text/javascript"></script>
 </head>
 
 <body>
-  <section>
-    <form name="f">
+
+  <h1>Dear Valentine...</h1>
+  <img src="images/twoHearts.gif" alt="glitter hearts"/>
+
+  <section id="questions">
+    <form name="f" id="form-f">
       <div>
-        <label> valentine name </label>
+        <label> Valentine's Name </label>
         <input type="text" name="vname">
       </div>
 
       <div>
-        <label> adjective </label>
+        <label> Verb (Past Tense) </label>
+        <input type = "text" name = "verbPast">
+      </div>
+
+      <div>
+        <label> School Subject </label>
+        <input type = "text" name = "subject">
+      </div>
+
+      <div>
+        <label> Noun </label>
+        <input type = "text" name = "noun1">
+      </div>
+
+      <div>
+        <label> Adjective </label>
         <input type = "text" name = "adj1">
       </div>
 
       <div>
-        <label> adjective </label>
-        <input type = "text" name = "adj2">
+        <label> Color </label>
+        <input type = "text" name = "color">
       </div>
+
+      <div>
+        <label> Body Part </label>
+        <input type = "text" name = "bodyPart">
+      </div>
+
+      <div>
+        <label> Song </label>
+        <input type = "text" name = "song">
+      </div>
+
+      <div>
+        <label> Holiday </label>
+        <input type = "text" name = "holiday">
+      </div>
+
+      <div>
+        <label> Number </label>
+        <input type = "text" name = "number">
+      </div>
+
+      <div>
+        <label> Noun (Plural) </label>
+        <input type = "text" name = "pluralNoun">
+      </div>
+      <input type="reset" value="reset" id="reset"/>
+      <input type="submit" value="submit" id="submit"/>
+    </form>
 
   </section>
 
+  <div id="result">
+  </div>
 
 </body>
+
+<footer>
+   <a href="https://estherkwak.github.io/des157">portal</a> |
+   <a href="mailto:ejkwak@ucdavis.edu">email</a> |
+   <a href="https://validator.w3.org/check?uri=referer">valid html</a> |
+   <a href="https://jigsaw.w3.org/css-validator/check/referer">valid css</a>
+ </footer>
+
 
 </html>

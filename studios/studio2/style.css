@@ -8,3 +8,85 @@
     margin: 0px;
     padding: 0px
 }
+
+body{
+  background-color: pink;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  padding: 20px 20px 10px 20px;
+  color: #b12057;
+}
+
+img{
+  padding: 90px 5px 5px 10px;
+}
+
+#questions {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0px 5px 20px 40px;
+  color: #b12057;
+  float: left;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 3px solid #b12057;
+    background-color: pink;
+    outline: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    background-color: #b12057;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+#result {
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  width: 500px;
+  color: #b12057;
+  float: right;
+  margin-right: 10%;
+}
+
+footer {
+  font-family: 'Quicksand', sans-serif;
+	clear: left;
+	padding: 3% 0 0 5%;
+  color: white;
+}
+
+a {
+	text-decoration: none;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* hoover over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: gray;
+}
