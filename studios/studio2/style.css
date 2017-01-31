@@ -14,15 +14,15 @@ body {
   background-color: pink;
 }
 
+img {
+  padding: 90px 5px 5px 10px;
+}
+
 h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   padding: 20px 20px 10px 20px;
   color: #b12057;
-}
-
-img {
-  padding: 90px 5px 5px 10px;
 }
 
 #form-f {
