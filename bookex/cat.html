@@ -1,0 +1,55 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>! ADD A DESCRIPTIVE TITLE HERE...DO NOT FORGET TO UPDATE THIS !</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="text-align: center">
+      <img src="http://eloquentjavascript.net/img/cat.png" id="cat" style="position: relative">
+      <img src="http://eloquentjavascript.net/img/hat.png" id="hat" style="position: relative">
+    </p>
+
+    <h1>! ADD THE CHAPTER NUMBER HERE FOLLOWED BY BRIEF TITLE FOR THE EXERCISE !</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
+
+          var cat = document.querySelector("#cat");
+          var hat = document.querySelector("#hat")
+          var angle = 0, lastTime = null;
+          function animate(time) {
+            if (lastTime != null)
+              angle += (time - lastTime) * 0.001;
+            lastTime = time;
+            cat.style.top = (Math.sin(angle) * 20) + "px";
+            cat.style.left = (Math.cos(angle) * 200) + "px";
+            hat.style.top = (Math.sin(angle + 90)* -20) + "px";
+            hat.style.left = (Math.cos(angle - 90) * 200) + "px";
+            requestAnimationFrame(animate);
+          }
+          requestAnimationFrame(animate);
+
+    </script>
+</body>
