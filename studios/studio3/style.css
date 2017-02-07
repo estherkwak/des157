@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+body{
+  margin:55px;
+}
+
+#container {
+	width: 1000px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    position:absolute;
+    /*height:100%;*/
+    /*width:auto;*/
+}
+
+.row1 {
+	height:50%;
+	width:auto;
+	/*background: #c7c7c7;*/
+}
+
+.text {
+	vertical-align:middle;
+	height:100%;
+	text-align: center;
+	margin-top:20%;
+	font-family: 'Helvetica', sans-serif;
+	/*display: inline-block;*/
+}
+
+.row1_box {
+	width:300px;
+	height:90%;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	/*text-align: center;*/
+	/*background: #a2b31d;*/
+}
+
+.row2 {
+	height:50%;
+	width:auto;
+	/*background: #ffffff;*/
+}
+
+.row2_box {
+	width:300px;
+	height:90%;
+	float:left;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	/*background: #b2c3f1;*/
+}
