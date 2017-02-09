@@ -1,0 +1,50 @@
+<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>chapter 13-the cat's hat</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: white;
+            background-color: #333;
+            font-size: 11px;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 14- Mouse Trail</h1>
+    <h2>open the console to see the results of the script</h2>
+      <script>
+        // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
+        //declare dot variable
+        var dots = [];
+        //for loop for dots
+          for (var i = 0; i < 30; i++) {
+            var node = document.createElement("div");
+            node.className = "trail";
+            document.body.appendChild(node);
+            dots.push(node);
+          }
+          var currentDot = 0;
+          //dots on mousemove
+          addEventListener("mousemove", function(event) {
+            var dot = dots[currentDot];
+            dot.style.left = (event.pageX - 3) + "px";
+            dot.style.top = (event.pageY - 3) + "px";
+            currentDot = (currentDot + 1) % dots.length;
+          });
+        </script>
+</body>
