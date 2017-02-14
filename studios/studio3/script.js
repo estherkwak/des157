@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }, false);
     img_1.addEventListener("mouseout", function(event) {
     	img_1.src = "img/1face.JPG"
-    }, false);
+    }, false)
     img_1.addEventListener("click", function(event) {
         img_1.style.transition = "opacity 0.5s linear"
 		if (img_1.style.opacity == 0) {
