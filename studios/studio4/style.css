@@ -76,8 +76,9 @@ img {
 }
 
 footer {
-  clear: left;
-  padding: 3% 0 0 5%;
+  font-family: helvetica;
+  font: black;
+  margin-top: -100px;
 }
 
 a {
