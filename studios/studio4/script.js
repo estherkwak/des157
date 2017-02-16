@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     SF.addEventListener('mouseover', function () {
         console.log('mouseover');
         tipTimer = setTimeout(showtip, 40);
-        snd.play();
     });
 
     SF.addEventListener('mouseout', function () {
