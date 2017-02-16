@@ -10,9 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     SF.addEventListener("mouseout", function(event) {
     	cali_img.src = "images/camap.jpg" //on mouseout, change the image back to the general state map.
     }, false);
-    SF.addEventListener("click", function(event) {
 
-    });
     var LA = document.getElementById("LA");
     LA.addEventListener("mouseover", function(event) {
         cali_img.src = "images/la.jpg"// on mouseover, change the image to the one highlighting the city.
@@ -20,9 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     LA.addEventListener("mouseout", function(event) {
         cali_img.src = "images/camap.jpg" //on mouseout, change the image back to the general state map.
     }, false);
-    LA.addEventListener("click", function(event) {
 
-    });
      var SJ = document.getElementById("SJ");
     SJ.addEventListener("mouseover", function(event) {
         cali_img.src = "images/sj.jpg"// on mouseover, change the image to the one highlighting the city.
@@ -30,9 +26,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     SJ.addEventListener("mouseout", function(event) {
         cali_img.src = "images/camap.jpg" //on mouseout, change the image back to the general state map.
     }, false);
-    SJ.addEventListener("click", function(event) {
-
-    });
 
     SF.addEventListener('mouseover', function () {
         console.log('mouseover');
