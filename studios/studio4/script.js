@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     SF.addEventListener('mouseover', function () {
         console.log('mouseover');
         tipTimer = setTimeout(showtip, 40);
+        snd.play();
     });
 
     SF.addEventListener('mouseout', function () {
@@ -49,6 +50,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
         console.log('show tool tip');
         tip.style.opacity = 1;
     }
+    SJ.addEventListener('mouseover', function () {
+            console.log('mouseover');
+            tipTimer = setTimeout(showtip3, 40);
+        });
+
+    SJ.addEventListener('mouseout', function () {
+            console.log('mouseout');
+            clearTimeout(tipTimer);
+            tip3.style.opacity = 0;
+        });
+
+        function showtip3() {
+            console.log('show tool tip');
+            tip3.style.opacity = 1;
+        }
+    LA.addEventListener('mouseover', function () {
+            console.log('mouseover');
+            tipTimer = setTimeout(showtip2, 40);
+        });
+
+    LA.addEventListener('mouseout', function () {
+            console.log('mouseout');
+            clearTimeout(tipTimer);
+            tip2.style.opacity = 0;
+        });
+
+        function showtip2() {
+            console.log('show tool tip');
+            tip2.style.opacity = 1;
+        }
+
 
     // add an eventListener for mouseover that changes the src of the
     // heart image to the image titled "love.png"
