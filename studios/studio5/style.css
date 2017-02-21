@@ -1,11 +1,12 @@
 
 #container {
 	width: 800px;
-	margin-left: 50px;
+	margin-left: 60px;
 	margin-right: auto;
 	margin-top: 20px;
 	padding: 30px;
 	background-color: white;
+	font-family: helvetica;
 }
 
 svg {
@@ -15,9 +16,10 @@ svg {
 }
 
 #tooltip {
-	width: 150px;
+	width: 140px;
 	height: auto;
 	position: absolute;
+	font-family: helvetica;
 }
 
 #tooltip.hidden {
