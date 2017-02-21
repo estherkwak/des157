@@ -25,3 +25,33 @@ svg {
 #tooltip.hidden {
 	display: none;
 }
+
+footer {
+  font-family: helvetica;
+  font: black;
+  margin-top: -100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: darkgray;
+}
+
+/* hoover over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: gray;
+}
