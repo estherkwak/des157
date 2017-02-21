@@ -28,7 +28,7 @@ d3.json("cacounties.json", function(error,json) {
 		.append("path")
 		.attr("class", "land")
 		.attr("d", path)
-		.style("fill", "#ab12dd")//initial background color
+		.style("fill", "#97d5e0")//initial background color
 	   	.on("mouseover", function(d){
 	   		//position the tooltip
 			var xPosition = w/2 - 200;
@@ -37,14 +37,14 @@ d3.json("cacounties.json", function(error,json) {
 			.style("left", xPosition + "px")
 			.style("top", yPosition + "px");
 			d3.select("#county")
-			.text(d.properties.name);//county text filled 
+			.text(d.properties.name);//county text filled
 			d3.select("#tooltip")
 			.classed("hidden", false);
 			d3.select(this).attr("class", "land")
-	   		.style("fill", "#48494b"); //change color on hover
+	   		.style("fill", "#efcec5"); //change color on hover
 			})
 		.on("mouseout", function(){
 		d3.select("#tooltip").classed("hidden", true);
-		d3.select(this).attr("class","land").style("fill", "#ab12dd"); //back to background color
+		d3.select(this).attr("class","land").style("fill", "#97d5e0"); //back to background color
 		});
 });
