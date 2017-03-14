@@ -1,100 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <title>Imperial Boootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
 
-    <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+<!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= -->
 </head>
 
 <body>
+  <div id="preloader"></div>
 
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        PEDAL
-                    </a>
-                </li>
-                <li>
-                    <a href="html/footprint.html">Footprint</a>
-                </li>
-                <li>
-                    <a href="html/map.html">Map</a>
-                </li>
-                <li>
-                    <a href="html/about.html">About</a>
-                </li>
-                <!--<li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li> -->
-            </ul>
+<!--==========================
+  Hero Section
+============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="img/logo.png" alt="Pedal">
         </div>
-        <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Bike for a better future, planet, and self</h1>
-                        <!--<p>Improve your physical and mental health, save gas money, no traffic and no parking lot struggles, the list goes on and on.</p>-->
-                        <p>Help cut greenhouse gas emissions and reduce the nation’s dependence on oil. Traffic congestion wastes nearly 3.9 billion gallons of gas per year in the US. For every 1 mile pedaled rather than driven, nearly 1 pound of CO² (0.88 lbs) is saved. (US Environmental Protection Agency, 2009).</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Let's go!</a>
-                    </div>
-                </div>
-            </div>
+        <h1>Make biking your main form of transportaion</h1>
+        <h2>Ride your bicycle today for a <span class="rotating">better world, better health, better future</span></h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">About</a>
+          <a href="#why" class="btn-why">Why Bike</a>
         </div>
-        <!-- /#page-content-wrapper -->
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="logo" title="logo" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why">Why Bike</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#testimonials">Footprint</a></li>
+          <li><a href="#team">#pedalpower</a></li>
+          <!--<li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>-->
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+  About Section
+============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Biking is a better option for both for yourself as well as the planet and our future.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6 about-content">
+          <h2 class="about-title">Bike for a better world</h2>
+          <p class="about-text">
+            Welcome, Pedal was created to help educate people about bicycling and encourage more people to ride their bikes. The main goal is to reduce car trips to work and school while increasing bike safety.
+          </p>
+          <p class="about-text">
+            What we are about is promoting bicycling generally, for recreation, for transportation, for fun! One obstacle to that is safety, or the perception that bicycling is inherently unsafe on the roads we have. There are many cases where this is in fact true, but also some good existing routes.
+          </p>
+          <p class="about-text">
+            Ultimately, we hope to foster an inclusive approach to make our communities more livable, connected, and safe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  why Section
+============================-->
+  <section id="why">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Benefits of Biking</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Biking is beneficial for not only the planet but also the riders</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-desktop"></i></div>
+          <h4 class="service-title"><a href="">Improve overall health</a></h4>
+          <p class="service-description">The health benefits of regular aerobic exercise are well-known. Depending on your riding style and local road conditions, you could easily burn 600 calories an hour through brisk cycling. Most bike commuters report losing 15 to 20 pounds during their first year in the saddle without changing their eating habits.</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="">Save money</a></h4>
+          <p class="service-description">Save money on gas as well as on possible medical bills. Bikes also cost much less to maintain than cars. Even if you have a shop do things for you, costs will be trivial compared to a car.</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
+          <h4 class="service-title"><a href="">Free gym on wheels</a></h4>
+          <p class="service-description">Biking is also much easier on joints than running and you can save some precious time in a day by biking.</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-photo"></i></div>
+          <h4 class="service-title"><a href="">No rush hour traffic</a></h4>
+          <p class="service-description">Bikes are often faster than cars in urban areas, especially when city designers have set aside proper bike lanes. There's nothing more satisfying as a bicycle commuter than breezing past a long line of gridlocked traffic.</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-road"></i></div>
+          <h4 class="service-title"><a href="">Healthier habits</a></h4>
+          <p class="service-description">Studies show that bicycle commuters are healthier, more productive, and require less time off at work. This is why most enlightened employers are eager to accommodate commuting cyclists. Healthy workers are better workers — and that's good for the bottom line. Bikes are smart business.</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
+          <h4 class="service-title"><a href="">Cleaner environment</a></h4>
+          <p class="service-description">Bikes don't have tailpipes belching poisonous fumes into the atmosphere. They also eliminate the oil, fuel and hydraulic fluids dripped by automobiles onto the road surface — which means less toxic runoff into local waterways.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Subscrbe Section
+============================-->
+  <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="subscribe-title">Subscribe For Updates</h3>
+          <p class="subscribe-text">Join our movement! Sign up to receive weekly emails about our community events.</p>
+        </div>
+        <div class="col-md-4 subscribe-btn-container">
+          <a class="subscribe-btn" href="#">Subscribe Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Porfolio Section
+============================-->
+<br>
+  <section id="map">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">map</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">This will be a map where you can hover over locations to learn more about county and statistics about transportaion methods (biking, busing, trains) that are available there. <br> <a href="mapdraft/index.html">Rough outline of Map Page</a> without the additional details about different types of transportation in each county. </p>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+<!--==========================
+  Testimonials Section
+============================-->
+
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Footprint</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Calculate your trip's carbon footprint. Results will display cost of trip as well as carbon footprint. </p>
+          <img src="img/footprintcalc.jpg" width=100% height=10%>
+        </div>
+      </div>
+
+      <!--<div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Saul Goodman</h4>
+            <span>Lawless Inc</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>Sara Wilsson</h4>
+            <span>Odeo Inc</span>
+          </div>
+        </div>
+      </div>-->
 
     </div>
-    <!-- /#wrapper -->
+  </section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<!--==========================
+  Team Section
+============================-->
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">#PEDALPOWER</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Get involved in our biking community and use the hastag #pedalpower on social media! Also follow Pedal for additional updates.</p>
+        </div>
+      </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+              <br>
+            </div>
+          </div>
+        </div>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+        <div class="col-md-3">
+          <div class="member">
+            <div><img src="img/team-2.jpg" alt="instapictures"></div>
+            <p>****Above there will be instagram photo posts that used the #pedalpower hashtag. Users can scroll horizontally through three photos at a time and go back and forward using the arrows on the left and right of the three photos****</p>
+        </div>
+
+        <!--<div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+            <span>Twitter</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+            <span>LinkedIn</span>
+            <div class="social">
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>-->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Contact Section
+============================-->
+  <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Pedal</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Questions, Comments, Ideas?</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>232 Shields Ave<br>Davis, CA 95616</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>info@pedal.com</p>
+            </div>
+
+            <!--<div>
+              <i class="fa fa-phone"></i>
+              <p>+1 5589 55488 55s</p>
+            </div>-->
+
+          </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
 
 </body>
-
 </html>
