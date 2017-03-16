@@ -677,29 +677,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333333;
 }
 
-#testimonials .quote {
-  position: relative;
-  background: #fff;
-  padding: 60px;
-  margin-top: 40px;
-  font-size: 16px;
-  font-style: italic;
-  border-radius: 5px;
+input[type=text] {
+    border: 2px solid #03c4eb;
+    border-radius: 4px;
 }
 
-#testimonials .quote b {
-  display: inline-block;
-  font-size: 22px;
-  left: -9px;
-  position: relative;
-  top: -8px;
+input[type=submit] {
+    background-color: #03c4eb;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-#testimonials .quote small {
-  display: inline-block;
-  right: -9px;
-  position: relative;
-  top: 4px;
+input[type=radio]:checked ~ .check {
+  border: 5px solid #03c4eb;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #6dd4e2;
+}
+
+input[type=radio]:checked ~ label{
+  color: gray;
 }
 
 /* Team Section

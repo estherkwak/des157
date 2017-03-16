@@ -170,11 +170,11 @@
         <div class="col-md-12">
           <h3 class="section-title">map</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">This will be a map where you can hover over locations to learn more about county and statistics about transportaion methods (biking, busing, trains) that are available there. <br> <a href="mapdraft/index.html">Rough outline of Map Page</a> This map page is a draft of the functionailty of the final map function. <br> On hover, I would like there to be more a visually striking icon and imagery for the different methods of transportation available in that county.</p>
+          <p class="section-description"><p><b>Highway Vehicle-Miles Traveled (VMT) per capita in 2013</b><br>Vehicle miles traveled (VMT) per capita is calculated as the total annual miles of vehicle travel divided by the total population in a state or in an urbanized area. Data for this indicator come from the Federal Highway Administration (FHWA), 2011 Highway Statistics.</p>
         </div>
       </div>
       <div class="row">
-<pre id="state-name"> 
+<pre id="state-name">
       Hover over a state to see its VMT per capita!
       </pre>
 <div id='map2'></div>
@@ -235,7 +235,7 @@ map.on('load', function () {
         var features = map.queryRenderedFeatures(e.point, { layers: ["state-fills"] });
         if (features.length) {
             map.setFilter("state-fills-hover", ["==", "name", features[0].properties.name]);
-            document.getElementById("state-name").innerHTML="STATE: " + features[0].properties.name + ", VMT per capita: " + features[0].properties.vmt;
+            document.getElementById("state-name").innerHTML="STATE: " + features[0].properties.name + ", VMT per capita: " + features[0].properties.vmt + " miles";
             // console.log(features[0].properties.name);
         } else {
             map.setFilter("state-fills-hover", ["==", "name", ""]);
@@ -248,7 +248,8 @@ map.on('load', function () {
     });
 });
 </script>
-      
+
+      <p><br><em>SOURCES: VMT: U.S. Department of Transportation, Federal Highway Administration, Highway Statistics, VM-2, available at <a href="www.fhwa.dot.gov/policyinformation/statistics.cfm">FHWA</a> as of July 2015. Population: U.S. Department of Commerce, U.S. Census Bureau, Population Estimates, available at <a href="www.census.gov/popest">census</a> (link is external) as of July 2015.</em></p>
       </div>
     </div>
   </section>
@@ -261,8 +262,8 @@ map.on('load', function () {
           <h3 class="section-title">Footprint</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Calculate your trip's carbon footprint. Results will display cost of trip as well as carbon footprint. </p>
-          <img src="img/footprintcalc.jpg" width=100% height=10%>
           <form action="/action_page.php">
+            Select your commute mode:<br>
             <input type="radio" name="gender" value="male"> Drive<br>
             <input type="radio" name="gender" value="female"> Bike<br>
             <input type="radio" name="gender" value="other"> Bus<br>
@@ -274,10 +275,10 @@ map.on('load', function () {
             Average number of days commuting per week:<br>
             <input type="text">
             <br>
-            Average miles per gallon for your vehicle:<br>
+            Average miles per gallon:<br>
             <input type="text">
             <br>
-            Average cost per gallon of fuel that you pay $:<br>
+            Average cost per gallon of fuel:<br>
             <input type="text">
             <br>
             Average weekly parking cost:<br>
@@ -287,7 +288,7 @@ map.on('load', function () {
             <input type="text">
             <br><br>
             <input type="submit" value="Submit">
-          </form> 
+          </form>
         </div>
       </div>
     </div>
