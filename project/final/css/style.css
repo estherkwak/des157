@@ -575,11 +575,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#maptext {
-  width: 30%;
-  text-align: center;
-}
-
 #subscribe .subscribe-btn:hover {
   background: #03C4EB;
   border: 2px solid #03C4EB;
