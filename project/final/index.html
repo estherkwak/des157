@@ -168,7 +168,7 @@
         <div class="col-md-12">
           <h3 class="section-title">map</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description"><p><b>Highway Vehicle-Miles Traveled (VMT) per capita in 2013</b><br>Vehicle miles traveled (VMT) per capita is calculated as the total annual miles of vehicle travel divided by the total population in a state or in an urbanized area. Data for this indicator come from the Federal Highway Administration (FHWA), 2011 Highway Statistics.</p>
+          <p class="section-description" style="font-size:22px;"><p><b>Highway Vehicle-Miles Traveled (VMT) per capita in 2013:</b>Vehicle miles traveled (VMT) per capita is calculated as the total annual miles of vehicle travel divided by the total population in a state or in an urbanized area. Data for this indicator come from the Federal Highway Administration (FHWA), 2011 Highway Statistics.</p>
         </div>
       </div>
       <div class="row">
@@ -182,7 +182,7 @@ var map = new mapboxgl.Map({
     container: 'map2',
     style: 'mapbox://styles/mapbox/streets-v9',
     center: [-100.486052, 37.830348],
-    zoom: 2
+    zoom: 3
 });
 
 map.on('load', function () {
@@ -267,28 +267,8 @@ map.on('load', function () {
             <input type="radio" name="gender" value="other"> Bus<br>
             <input type="radio" name="gender" value="other"> Train<br>
             <br>
-            Average daily roundtrip commute mileage:<br>
-            <input type="text">
-            <br>
-            Average number of days commuting per week:<br>
-            <input type="text">
-            <br>
-            Average miles per gallon:<br>
-            <input type="text">
-            <br>
-            Average cost per gallon of fuel:<br>
-            <input type="text">
-            <br>
-            Average weekly parking cost:<br>
-            <input type="text">
-            <br>
-            Daily bridge cost (if any):<br>
-            <input type="text">
-            <br><br>
-            <input type="submit" value="Submit">
           </form>
           <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
             <form method="post" class="contactForm">
                 <div class="form-group">
@@ -300,7 +280,7 @@ map.on('load', function () {
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Average miles per gallon" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Average miles per gallon" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
@@ -329,7 +309,7 @@ map.on('load', function () {
         <div class="col-md-12">
           <h3 class="section-title">#PEDALPOWER</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Get involved in our biking community and use the hastag #pedalpower on social media! Also follow Pedal for additional updates.</p>
+          <p class="section-description">Get involved in our biking community and use #pedalpower on social media! <br>Follow Pedal for additional updates.</p>
         </div>
       </div>
 

@@ -575,6 +575,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+#maptext {
+  width: 30%;
+  text-align: center;
+}
+
 #subscribe .subscribe-btn:hover {
   background: #03C4EB;
   border: 2px solid #03C4EB;
@@ -677,19 +682,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333333;
 }
 
-input[type=text] {
-    border: 2px solid #03c4eb;
-    border-radius: 4px;
+#testimonials .form button[type="submit"] {
+  background: #03C4EB;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
 }
 
-input[type=submit] {
-    background-color: #03c4eb;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+#testimonials .form button[type="submit"]:hover {
+  background: #25d8fc;
 }
 
 input[type=radio]:checked ~ .check {
