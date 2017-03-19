@@ -40,7 +40,7 @@
         </div>
 
         <h1>Make biking your main form of transportaion</h1>
-        <h2>Ride your bicycle today for a better<span class="rotating">world, lifestyle, future</span></h2>
+        <h2>Ride your bicycle today for a better <span class="rotating">world, lifestyle, future</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">About</a>
           <a href="#why" class="btn-why">Why Bike</a>
@@ -287,6 +287,36 @@ map.on('load', function () {
             <br><br>
             <input type="submit" value="Submit">
           </form>
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form method="post" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Average daily roundtrip commute mileage" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Average number of days commuting per week" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Average miles per gallon" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Average cost per gallon of fuel"></input>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Average weekly parking cost"></input>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Daily bridge cost (if any)"></input>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Submit</button></div>
+            </form>
         </div>
       </div>
     </div>
